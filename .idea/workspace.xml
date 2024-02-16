@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="98e5ecec-6ca7-43ea-b2c3-2f11364e8d96" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/CMIT235_Network.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMIT235_Package/CMIT235_Tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMIT235_Package/NetworkCheck.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMIT235_Package/NewNetworkCheck.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMIT235_Package/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmit235_network_data.pcap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmit235_network_data.pcapng" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network_packets.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2azwOusBw31Wg2qQbqlG56sK9Bo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.MyTest.executor": "Run",
+    "Python.NetworkCheck.executor": "Run",
+    "Python.NewNetworkCheck.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98e5ecec-6ca7-43ea-b2c3-2f11364e8d96" name="Changes" comment="" />
+      <created>1705334687238</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705334687238</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
+    <option name="historyDtoById">
+      <map>
+        <entry key="d36cd9">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/MyTest.py" />
+                </list>
+              </option>
+              <option name="id" value="d36cd9" />
+              <option name="initiateTms" value="1706975473839" />
+              <option name="request" value="i'm getting this warning when running this file: WARNING: No libpcap provider available ! pcap won't be used&#10;How do I correct this warning?" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="The warning message &quot;No libpcap provider available! pcap won't be used&quot; indicates that the `rdpcap` function from the `scapy.utils` module is unable to find the libpcap library, which is required for capturing network packets.&#10;&#10;To correct this warning, you need to install the libpcap library on your system. Here are the steps to install it:&#10;&#10;1. For Windows:&#10;   - Download the WinPcap library from the official website: https://www.winpcap.org/install/default.htm&#10;   - Run the downloaded installer and follow the installation instructions.&#10;   - After the installation is complete, restart your computer.&#10;&#10;2. For macOS:&#10;   - Install Homebrew if you haven't already. Open Terminal and run the following command:&#10;     ```&#10;     /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;&#10;     ```&#10;   - Once Homebrew is installed, run the following command to install libpcap:&#10;     ```&#10;     brew install libpcap&#10;     ```&#10;&#10;3. For Linux (Ubuntu/Debian):&#10;   - Open Terminal and run the following command to install libpcap:&#10;     ```&#10;     sudo apt-get install libpcap-dev&#10;     ```&#10;&#10;After installing libpcap, you should no longer see the warning message when running your code. Make sure to import the `rdpcap` function from `scapy.utils` again and try running your code." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1706975478458" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/MyTest.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="greeting">
+          <value>
+            <ChatHistoryModel>
+              <option name="id" value="greeting" />
+              <option name="initiateTms" value="1706492499216" />
+              <option name="request" value="" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="&#10;Hello, I am Machinet AI - context aware chat, which can help you with your daily programming routine. How can I help?" />
+              <option name="responseTms" value="1706492501013" />
+            </ChatHistoryModel>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
