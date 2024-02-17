@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98e5ecec-6ca7-43ea-b2c3-2f11364e8d96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/CMIT235_Network.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMIT235_Package/CMIT235_Tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMIT235_Package/NetworkCheck.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMIT235_Package/NewNetworkCheck.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMIT235_Package/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmit235_network_data.pcap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmit235_network_data.pcapng" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network_packets.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMIT235_Package/AddedNetworkCheck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CMIT235_Network.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CMIT235_Network.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMIT235_Package/CMIT235_Tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMIT235_Package/CMIT235_Tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMIT235_Package/NetworkCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMIT235_Package/NetworkCheck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMIT235_Package/NewNetworkCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMIT235_Package/NewNetworkCheck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +46,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.AddedNetworkCheck.executor": "Run",
     "Python.MyTest.executor": "Run",
     "Python.NetworkCheck.executor": "Run",
     "Python.NewNetworkCheck.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "CodeWithMe"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -85,6 +80,30 @@
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
       <map>
+        <entry key="3c9268">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/CMIT235_Package/AddedNetworkCheck.py" />
+                </list>
+              </option>
+              <option name="id" value="3c9268" />
+              <option name="initiateTms" value="1708114061746" />
+              <option name="request" value="how do i fix this error in my class: WARNING: No libpcap provider available ! pcap won't be used" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="The warning message &quot;No libpcap provider available! pcap won't be used&quot; is related to the `scapy` library's dependency on the libpcap library for capturing network packets. However, this warning should not affect the functionality of your class unless you are explicitly using packet capturing features.&#10;&#10;If you are not using packet capturing features in your `AddedNetworkCheck` class, you can safely ignore this warning. It won't impact the execution of your code.&#10;&#10;However, if you are using packet capturing features and want to avoid this warning, you can follow the steps mentioned in the previous response to install the libpcap library on your system.&#10;&#10;Once you have installed the libpcap library, make sure to import the necessary functions from the `scapy` library and use them as intended in your code." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1708114064384" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/CMIT235_Package/AddedNetworkCheck.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="d36cd9">
           <value>
             <ChatHistoryModel>
@@ -101,6 +120,30 @@
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
               <option name="responseTms" value="1706975478458" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/MyTest.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="e2122d">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/MyTest.py" />
+                </list>
+              </option>
+              <option name="id" value="e2122d" />
+              <option name="initiateTms" value="1708114178618" />
+              <option name="request" value="why am i getting this error even though i am providng an argument: TypeError: AddedNetworkCheck.getPingCount() missing 1 required positional argument: 'pcapFile'" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="The error message you're encountering indicates that the `getPingCount()` method of the `AddedNetworkCheck` class is missing a required positional argument called `pcapFile`. This means that when you're calling the `getPingCount()` method, you need to provide a value for the `pcapFile` argument.&#10;&#10;Looking at your code, it seems that you're not passing any argument to the `getPingCount()` method. To fix this error, you need to provide the `pcapFile` argument when calling the `getPingCount()` method.&#10;&#10;Here's an example of how you can pass the `pcapFile` argument to the `getPingCount()` method:&#10;&#10;```python&#10;# Instantiate the AddedNetworkCheck class&#10;addedNetworkCheck = addednc.AddedNetworkCheck()&#10;&#10;# Call the getPingCount() method and provide the pcapFile argument&#10;pingCount = addedNetworkCheck.getPingCount(packets, pcapFile=cm.pcap)&#10;&#10;# Print the ping count&#10;print(f'The ping count is: {pingCount}\n')&#10;```&#10;&#10;Make sure to replace `packets` with the appropriate value and `cm.pcap` with the path to your pcap file. By providing the `pcapFile` argument, you should be able to resolve the `TypeError` and get the desired result." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1708114181315" />
               <option name="usedLocalFilePaths">
                 <list>
                   <option value="$PROJECT_DIR$/MyTest.py" />

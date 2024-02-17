@@ -1,6 +1,6 @@
 # Name: Nate Lanfranca
-# Date: 2/8/2024
-# Assignment: Week 4 - Overloading and overriding
+# Date: 2/16/2024
+# Assignment: Week 5 - Inheritance, Iterators, and Generators
 # Description: Explores the use and manipulation of python lists, numpy arrays, user-defined classes, scopes,
 # overriding, overloading, and creating, importing, and referencing packages
 
@@ -18,6 +18,8 @@ import CMIT235_Package.NetworkCheck as nc
 
 # Import the NewNetworkCheck class
 import CMIT235_Package.NewNetworkCheck as nnc
+
+import CMIT235_Package.AddedNetworkCheck as addednc
 
 # Combine the three sublists lists into one list and store the combined list into a new variable.
 newList = [cm.mySubList1, cm.mySubList2, cm.mySubList3]
@@ -167,3 +169,36 @@ print('----Print the dictionary of all the passed features----\n')
 chkCounts2 = newClass.checkCounts(cm.csv_data, cm.feature1, cm.feature2, cm.feature3)
 for key, value in chkCounts2.items():
     print(f"{key}: {value}")
+
+
+# -----Week 5 Inheritance, Iterators, and Generators-----
+print('\n-----Week 5 Inheritance, Iterators, and Generators----\n')
+
+# Create a new variable for the np array using the inherited function from NewNetworkClass
+inheritedArray = newNetworkClass.convertList2NpArray(newList)
+
+# Get and print the minimum value using the inherited function
+print(f'The minimum value is: {newNetworkClass.getMin(inheritedArray)}\n')
+
+# Get and print the maximum value using the inherited function
+print(f'The maximum value is: {newNetworkClass.getMax(inheritedArray)}\n')
+
+# Get and print the minimum value using the inherited function
+print(f'The unique values are: {newNetworkClass.getUniqueValues(inheritedArray)}\n')
+
+# Get the ping count from the AddedNetworkClass
+addedNetworkCheck = addednc.AddedNetworkCheck()
+pingCount = addedNetworkCheck.getPingCount(packets)
+print(f'The ping count is: {pingCount}\n')
+
+# Set the MAC count
+addedNetworkCheck.setSourceMacCount(packets,cm.mac_address)
+
+# Get the MAC count
+getMacCount = addedNetworkCheck.getSourceMacCount()
+print(f'The MAC count is: {getMacCount}\n')
+
+# Get and print the checkCounts function
+getCheckCounts = addedNetworkCheck.checkCounts(cm.csv_data, cm.feature3)
+for key, value in getCheckCounts.items():
+    print(f'{key}: {value}')

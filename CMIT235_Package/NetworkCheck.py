@@ -1,6 +1,6 @@
 # Name: Nate Lanfranca
-# Date: 2/8/2024
-# Assignment: Week 4 - Overloading and overriding
+# Date: 2/16/2024
+# Assignment: Week 5 - Inheritance, Iterators, and Generators
 # Description: Class to manage and reference functions for network administration
 
 # Import the required packages
