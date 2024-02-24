@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98e5ecec-6ca7-43ea-b2c3-2f11364e8d96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CMIT235_Package/AddedNetworkCheck.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CMIT235_Network.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CMIT235_Network.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="98e5ecec-6ca7-43ea-b2c3-2f11364e8d96" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMIT235_Package/CMIT235_Tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMIT235_Package/CMIT235_Tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMIT235_Package/NetworkCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMIT235_Package/NetworkCheck.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMIT235_Package/NewNetworkCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMIT235_Package/NewNetworkCheck.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
@@ -47,6 +43,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.AddedNetworkCheck.executor": "Run",
+    "Python.CMIT235_Tools.executor": "Run",
     "Python.MyTest.executor": "Run",
     "Python.NetworkCheck.executor": "Run",
     "Python.NewNetworkCheck.executor": "Run",
@@ -73,6 +70,17 @@
       <updated>1705334687238</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

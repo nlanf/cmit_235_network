@@ -6,6 +6,18 @@
 
 # Import the numpy package as np
 import numpy as np
+import sys
+import logging
+
+# ----Logging Instantiation----
+
+# Set the log file
+logging.basicConfig(filename='log_file', filemode='w', level=logging.DEBUG)
+
+# Create a logging object using hierarchy
+logger = logging.getLogger(__name__)
+
+# -----Logging Instantiation End----
 
 # Import the rdpcap tool
 from scapy.utils import rdpcap
@@ -21,8 +33,22 @@ import CMIT235_Package.NewNetworkCheck as nnc
 
 import CMIT235_Package.AddedNetworkCheck as addednc
 
+# Log the program start
+logger.info('Program start')
+
 # Combine the three sublists lists into one list and store the combined list into a new variable.
-newList = [cm.mySubList1, cm.mySubList2, cm.mySubList3]
+try:
+    newList = [cm.mySubList1, cm.mySubList2, cm.mySubList3]
+    if isinstance(newList, list):
+        pass
+    else:
+        TypeError('The combined lists are not of the list type!')
+        logger.error('The combined lists are not of the list type!')
+        sys.exit(1)
+except Exception as e:
+    print(f'The system encountered an error: {e}')
+    logger.error(f'Error on list conversion block: {e}')
+    sys.exit(1)
 
 # -----Week 1 work-----
 
@@ -71,8 +97,24 @@ print('------Week 2 - New version utilizing the NetworkCheck class------')
 # Instantiating the class
 newClass = nc.NetworkCheck()
 
+# Log NetworkCheck Instantiation
+logger.info('NetworkCheck object instantiated')
+
+# Check the object type
+if not isinstance(newClass, nc.NetworkCheck):
+    TypeError(f'Expected type: {nc.NetworkCheck}, got: {type(newClass)}')
+    logger.error(f'Expected type: {nc.NetworkCheck}, got: {type(newClass)}')
+    sys.exit(1)
+
 # Converting the lists to numpy array
 newerArray = newClass.convertList2NpArray(newList)
+
+# Check that the max and min values are within acceptable ranges
+if newClass.getMax(newerArray) > 100:
+    ValueError('The max value is over 100')
+
+if newClass.getMin(newerArray) < -100:
+    ValueError('The min value is below -100')
 
 # Get and print the max of newerArray
 print('The max value using the class object: ' + str(newClass.getMax(newerArray)))
@@ -84,6 +126,12 @@ print('The min value using the class object: ' + str(newClass.getMin(newerArray)
 print('The unique values using the class object: ' + str(newClass.getUniqueValues(newerArray)))
 
 descriptiveInfo = newClass.getDescriptingInfo(newList)
+
+# Check that the object is of dictionary type
+if not isinstance(descriptiveInfo, dict):
+    TypeError(f'Expected type: {type(dict)}, got: {type(descriptiveInfo)}')
+    logger.error(f'Expected type: {type(dict)}, got: {type(descriptiveInfo)}')
+    sys.exit(1)
 
 # Iterating over the returned dictionary of items
 for key, value in descriptiveInfo.items():
@@ -122,7 +170,13 @@ except:
     print('Unable to access messages.\n')
 
 # ------Instantiate the packet variable------
-packets = rdpcap(cm.pcap)
+# First check that the file read was successful
+try:
+    packets = rdpcap(cm.pcap)
+except Exception as e:
+    print(f'There was an error reading the file: {e}')
+    logger.error(f'Pcap file read error: {e}')
+    sys.exit(1)
 
 # ----------Sport----------
 print('----------Sport----------')
@@ -130,7 +184,13 @@ try:
     # Set the sport value
     networkClass.setSourcePortCount(packets, cm.sport)
     # Get sport count
-    print(f'The sport count is: {networkClass.getSourcePortCount()}\n')
+    # First check that the variable is the correct type
+    if not isinstance(networkClass.getSourcePortCount(), int):
+        TypeError(f'Expected type: {type(int)}, got: {type(networkClass.getSourcePortCount())}')
+        logger.error(f'Expected type: {type(int)}, got: {type(networkClass.getSourcePortCount())}')
+        sys.exit(1)
+    else:
+        print(f'The sport count is: {networkClass.getSourcePortCount()}\n')
 except:
     print('Unable to get the sport count\n')
 
@@ -140,7 +200,13 @@ try:
     # Set the mac value
     networkClass.setSourceMacCount(packets, cm.mac_address)
     # Get the mac count
-    print(f'The MAC count is: {networkClass.getSourceMacCount()}\n')
+    # First check that the variable is the correct type
+    if not isinstance(networkClass.getSourceMacCount(), int):
+        TypeError(f'Expected type: {type(int)}, got: {type(networkClass.getSourceMacCount())}')
+        logger.error(f'Expected type: {type(int)}, got: {type(networkClass.getSourceMacCount())}')
+        sys.exit(1)
+    else:
+        print(f'The MAC count is: {networkClass.getSourceMacCount()}\n')
 except:
     print('Unable to get the MAC count\n')
 
@@ -149,6 +215,15 @@ print('-----Week 4 Overriding and Overloading-----\n')
 
 # Instantiate the NewNetworkClass
 newNetworkClass = nnc.NewNetworkClass()
+
+# Log NewNetworkClass Instantiation
+logger.info('NewNetworkClass Instantiated')
+
+# Check the object type
+if not isinstance(newNetworkClass, nnc.NewNetworkClass):
+    TypeError(f'Expected type: {nnc.NewNetworkClass()}, got: {type(newNetworkClass)}')
+    logger.error(f'Expected type: {nnc.NewNetworkClass()}, got: {type(newNetworkClass)}')
+    sys.exit(1)
 
 # Call the overriding descripting info
 newDescriptiveInfo = newNetworkClass.getDescriptingInfo(newList)
@@ -188,8 +263,19 @@ print(f'The unique values are: {newNetworkClass.getUniqueValues(inheritedArray)}
 
 # Get the ping count from the AddedNetworkClass
 addedNetworkCheck = addednc.AddedNetworkCheck()
+
+# Log AddedNetworkClass Instantiation
+logger.info('AddedNetworkClass Instantiated')
+
 pingCount = addedNetworkCheck.getPingCount(packets)
-print(f'The ping count is: {pingCount}\n')
+
+# First check that the variable is the correct type
+if not isinstance(pingCount, int):
+    TypeError(f'Expected type: {type(int)}, got: {type(pingCount)}')
+    logger.error(f'Expected type: {type(int)}, got: {type(pingCount)}')
+    sys.exit(1)
+else:
+    print(f'The ping count is: {pingCount}\n')
 
 # Set the MAC count
 addedNetworkCheck.setSourceMacCount(packets,cm.mac_address)
