@@ -1,8 +1,8 @@
 # Name: Nate Lanfranca
 # Date: 2/16/2024
-# Assignment: Week 5 - Inheritance, Iterators, and Generators
+# Assignment: Week 7 - Advanced Functions
 # Description: Explores the use and manipulation of python lists, numpy arrays, user-defined classes, scopes,
-# overriding, overloading, and creating, importing, and referencing packages
+# overriding, overloading, creating, importing, and referencing packages, and advanced functions
 
 # Import the numpy package as np
 import numpy as np
@@ -288,3 +288,68 @@ print(f'The MAC count is: {getMacCount}\n')
 getCheckCounts = addedNetworkCheck.checkCounts(cm.csv_data, cm.feature3)
 for key, value in getCheckCounts.items():
     print(f'{key}: {value}')
+
+# -----Week 7 Advanced Functions-----
+print('\n-----Week 7 Advanced Functions-----\n')
+
+# Call the getSuper method which returns the minimum value of a passed array
+print(f'The minimum value of the passed array is: ')
+newNetworkClass.callSuper(cm.mySubList2)
+
+# Check the subclass for newNetworkCheck
+print('\n----Use the lambda function to check the subclass----')
+isSubclass = lambda obj, cls: issubclass(type(obj), cls)
+try:
+    if isSubclass(newNetworkClass, nc.NetworkCheck):
+        print('The newNetworkClass variable is a subclass of NetworkCheck.\n')
+except Exception as e:
+    print(f'There was an error: {e}\n')
+
+# Call the getGrandparent method which returns the maximum value of a passed array
+print('----Call the grandparent function----')
+print(f'The maximum value of the passed array is: ')
+addedNetworkCheck.callGrandparent(cm.mySubList3)
+
+# check the subclass for addedNetworkCheck
+print('\n----Reuse the lambda function to check the subclass----')
+try:
+    if isSubclass(addedNetworkCheck, nc.NetworkCheck):
+        print('The addedNetworkClass variable is a subclass of NetworkCheck.\n')
+except Exception as e:
+    print(f'There was an error: {e}\n')
+
+# Function for the addedNetworkCheck object
+def addedNetworkCheckVar():
+    return addedNetworkCheck
+
+# Function for the NewNetworkCheck class
+def newNetworkCheckVar():
+    return nnc.NewNetworkClass
+
+# Assign to variables
+ancVar = addedNetworkCheckVar()
+nncVar = newNetworkCheckVar()
+
+# Check the subclass for addedNetworkCheck
+print('----Use the function variables to check the subclass----')
+try:
+    if isSubclass(ancVar, nncVar):
+        print('The addedNetworkClass variable is a subclass of NewNetworkCheck.\n')
+except Exception as e:
+    print(f'There was an error: {e}\n')
+
+def repeat(l):
+    if len(l) == 1:
+        print(f'List value: {l[0]}')
+    else:
+        # Divide the list in half and get an index number
+        mid = len(l) // 2
+        # Create two arrays using that middle index point
+        sublist1 = l[:mid]
+        sublist2 = l[mid:]
+        # Recursively call repeat with the first list
+        repeat(sublist1)
+        # Recursively call repeat with the second list
+        repeat(sublist2)
+
+repeat(cm.mySubList1[0])

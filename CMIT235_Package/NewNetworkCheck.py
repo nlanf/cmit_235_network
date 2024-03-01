@@ -1,6 +1,6 @@
 # Name: Nate Lanfranca
 # Date: 2/16/2024
-# Assignment: Week 5 - Inheritance, Iterators, and Generators
+# Assignment: Week 7 - Advanced Functions
 # Description: Overriding the NetworkCheck class
 
 # Import the NetworkCheck class
@@ -21,3 +21,7 @@ class NewNetworkClass(nc.NetworkCheck):
             newDict['Median'].append(np.median(sublist))
             newDict['StandardDeviation'].append(np.std(sublist))
         return newDict
+
+    def callSuper(self, arrayParam):
+        supMin = super().getMin(arrayParam)
+        print(supMin)

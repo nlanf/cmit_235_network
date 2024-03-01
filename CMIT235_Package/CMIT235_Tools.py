@@ -1,6 +1,6 @@
 # Name: Nate Lanfranca
 # Date: 2/16/2024
-# Assignment: Week 5 - Inheritance, Iterators, and Generators
+# Assignment: Week 7 - Advanced Functions
 # Description: Python lists, sublists, and variables for network data
 
 mySubList1 = [[1, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6], [2, 8, 4, 6, 7, 8, 9, 10, 11, 12, 12, 13]]

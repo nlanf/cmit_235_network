@@ -1,6 +1,6 @@
 # Name: Nate Lanfranca
-# Date: 2/16/2024
-# Assignment: Week 5 - Inheritance, Iterators, and Generators
+# Date: 2/29/2024
+# Assignment: Week 7 - Advanced Functions
 # Description: Using iterators and generators in a separate class
 from scapy.layers.inet import TCP
 
@@ -19,3 +19,7 @@ class AddedNetworkCheck(nnc.NewNetworkClass):
                 if packet[TCP].window == 4095:
                     count += 1
         return count
+
+    def callGrandparent(self, arrayParam):
+        gpMax = super().getMax(arrayParam)
+        print(gpMax)

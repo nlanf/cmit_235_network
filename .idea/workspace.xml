@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98e5ecec-6ca7-43ea-b2c3-2f11364e8d96" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="98e5ecec-6ca7-43ea-b2c3-2f11364e8d96" name="Changes" comment="Week 6 exception handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMIT235_Package/AddedNetworkCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMIT235_Package/AddedNetworkCheck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMIT235_Package/CMIT235_Tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMIT235_Package/CMIT235_Tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMIT235_Package/NetworkCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMIT235_Package/NetworkCheck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMIT235_Package/NewNetworkCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMIT235_Package/NewNetworkCheck.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +28,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nlanf&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d7ef28c1-8b09-46fa-af8a-e727232cb629" />
+        <option name="url" value="https://github.com/nlanf/cmit_235_network.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
@@ -39,24 +56,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.AddedNetworkCheck.executor": "Run",
-    "Python.CMIT235_Tools.executor": "Run",
-    "Python.MyTest.executor": "Run",
-    "Python.NetworkCheck.executor": "Run",
-    "Python.NewNetworkCheck.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "CodeWithMe"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.AddedNetworkCheck.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CMIT235_Tools.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.NetworkCheck.executor&quot;: &quot;Run&quot;,
+    &quot;Python.NewNetworkCheck.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+        <option value="bundled-python-sdk-d68999036c7f-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.14475.56" />
       </set>
     </attachedChunks>
   </component>
@@ -69,6 +86,15 @@
       <option name="presentableId" value="Default" />
       <updated>1705334687238</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1708789991887</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708789991887</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,6 +110,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
